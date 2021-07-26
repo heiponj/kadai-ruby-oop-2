@@ -1,4 +1,4 @@
-class Menter
+class Mentor
   
   def initialize(name)
    @name = name
@@ -9,20 +9,16 @@ class Menter
  end
 end
 
-class RailsMenter < Menter
-
- def initialize
-  super("赤出")
- end
- 
+class RailsMentor < Mentor
+    
 def job
  puts "#{@name}です。私はRubyとRailsでWebアプリケーションを作ります。"
 end
  
 end
 
-kirameki = Menter.new("煌木")
-akaide = RailsMenter.new
+kirameki = Mentor.new("煌木")
+akaide = RailsMentor.new("赤出")
 
 kirameki.job
 akaide.job
